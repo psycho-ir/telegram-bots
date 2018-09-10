@@ -1,7 +1,7 @@
 <?php 
 ini_set("log_errors" , "off");
 flush();
-$API_KEY = 'توکن ربات'; 
+$API_KEY = '627662818:AAEKPxW3fVmci11fJ_OIuOUTshY6n4nYZF0'; 
 define('API_KEY',$API_KEY);
 ##------------------------------##
 
@@ -69,8 +69,8 @@ $message_id = $message->message_id;
 $from_id = $message->from->id;
 $text = $message->text;
 $candotm = file_get_contents("data/$from_id/candotm.txt");
-$ADMIN = "466513623"; // شناسه ادمین را جاگذاری کنید
-$kanal = "@php_sources";  // آیدی کانالتان را همراه با @ جاگذاری کنید
+$ADMIN = "627662818"; // شناسه ادمین را جاگذاری کنید
+$kanal = "@fandoghtest_bot";  // آیدی کانالتان را همراه با @ جاگذاری کنید
 $to =  file_get_contents("data/$from_id/token.txt");
 $url =  file_get_contents("data/$from_id/url.txt");
 $tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=$kanal&user_id=".$from_id))->result->status;
