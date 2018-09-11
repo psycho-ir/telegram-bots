@@ -1,7 +1,7 @@
 kind: ExternalService
 name: setweb
 spec:
-  image: sarabadani/setweb:0.4
+  image: sarabadani/setweb:0.7
   port: 80
   volume_mounts:
     - mount_path: /var/www/public/data
